@@ -1,0 +1,115 @@
+:root{
+    background-color: rgb(240, 240, 240);
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /*#333333;*/
+}
+
+/* UTILITIES */
+.container-darken{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    /* flex-grow: 1; */
+    flex: 1 0 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: teal;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.home1{
+    background: #ddd;
+}
+
+.home1 .input-field{
+    width: 50%;
+}
+
+.input-field label{
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.home2{
+    background: white;
+    padding: 0 20px;
+}
+
+.home3{
+    background: #9adae6;
+    padding: 50px;
+}
+
+/* BUTTONS */
+.btn_1{
+    font-size: 1.8rem;
+    padding: 0.8rem 0;
+    width: 10rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+.btn_1:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn_1[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/*  Form  */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(80, 180, 200, 0.5);
+    color:black;
+}

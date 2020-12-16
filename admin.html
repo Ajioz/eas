@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+     <!--Import Google Icon Font-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./Dashboard/materialize.min.css" media="screen, projection"/>
+    <link rel="stylesheet" href="student.css">
+</head>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper orange">
+            <a href="#!" class="brand-logo">eAs</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/index.html">Home</a></li>
+                <li class="current"><a href="/admin.html">Admin Login</a></li>
+                <li><a href="/student.html">Student Login</a></li>
+                <li><a href="/register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/admin.html">Admin Login</a></li>
+        <li><a href="/student.html">Student Login</a></li>
+        <li><a href="/register.html">Register</a></li>
+    </ul>
+    <div class="border">
+        <header id="header" >
+            <div id="page-banner">
+                <h1 class="department"></h1>
+                <h1>Admin Portal</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="john Doe" id="username" type="text" class="validate">
+                      <label for="username">Username</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <input id="school" type="text" class="validate">
+                        <label for="school">School</label>
+                      </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+        <div id="btn-center">
+            <button type="Login" class="btn" id="loginBtn" onClick="login(event)" disabled>Login</button>
+        </div>
+       
+    </div>
+
+    <!-- <footer><p>Ajiozi Limited, Copyright &copy; 2020</p></footer> -->
+    <footer class="page-footer orange darken-1">
+        <div class="container">
+          <div class="row">
+            <div class="sep"></div>
+            <div class="col l6 s12">
+              <h5 class="yellow-text">Visit us:</h5>
+              <p class="grey-text text-lighten-4">
+                  <h6 class="black-text">Head Office</h6>
+                  <p>#31 Airport Road, 
+                      <p>Effurun, Delta State,</p>
+                      <p>Nigeria.</p>
+                    </p>
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="yellow-text"> Call Lines</h5>
+                <p class="white-text">+234-8064107055</p>
+                <p class="white-text">+234-8151654368</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright center">
+          <div class="container">
+            Ajiozi Limited, Copyright &copy; 2017 - 2021
+          </div>
+        </div>
+      </footer>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="./Dashboard/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0 )
+        })
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+        
+        window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+    </script>
+    <script src="admin.js"></script>
+</body>
+</html>

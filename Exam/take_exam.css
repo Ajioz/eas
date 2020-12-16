@@ -1,0 +1,418 @@
+:root{
+    background-color:white; 
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.border{
+    background:white; 
+    width: 100%;
+    max-width: 760px;
+    /* height: 590px; */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    font-family: "Open Sans", sans-serif; 
+}
+#page-banner{
+    background: #eee ;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+h1, h4{
+    font-family: monospace;
+    font-size: 38px;
+    text-align: center;
+}
+
+.hud-main-text, h4{
+    font-family: monospace;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.container{
+    display: flex;
+    height: 78vh;
+    /* line-height: 30px; */
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4.5rem;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-bottom: 4.5rem;
+}
+
+.container3{
+    display: flex;
+    height: 63vh;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4.5rem;
+}
+
+/* Targeting Container Child */
+.container   > * {
+    width: 100%;
+}
+
+.container3   > * {
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.9rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border:0.1rem solid rgba(86, 165, 235 0.25);
+    background-color: rgb(236, 236, 236);
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding:1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+
+/* HUD */
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*LOADER*/
+#loader{
+    border: 1.6rem solid rgb(218, 209, 164);
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+#reveal p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: darkblue;
+    margin: 0 auto;
+}
+
+#reveal h2{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    background: #333333;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+} 
+
+.hud-prefix{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 4rem;
+    border:0.3rem solid #56a5eb;
+    margin-top: 0.5rem;
+    
+}
+
+#progressBarFull{
+    height: 3.6rem;
+    background-color:#56a5eb;
+    width: 0%;
+}
+
+.correct{
+    border: 2px solid lightgreen;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    background: #ddd;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #2894ff;
+}
+
+a span{
+    display: block;
+    position: absolute;
+    background: #2894ff;
+}
+
+a span:nth-child(1){
+    left: 0;
+    bottom:0;
+    width:1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transform: transform 0.5s;
+}
+
+a:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transform: transform 0.5s;
+}
+
+a span:nth-child(2){
+    left: 0;
+    bottom:0;
+    width:100%;
+    height: 1px;
+    transform: scaleY(0);
+    transform-origin: right;
+    transform: transform 0.5s;
+}
+
+a:hover span:nth-child(2){
+    transform: scaleY(1);
+    transform-origin: left;
+    transform: transform 0.5s;
+    
+}
+
+a span:nth-child(3){
+    right: 0;
+    bottom:0;
+    width:1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transform: transform 0.5s;
+    transition-delay: 0.1s;
+}
+
+a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transform: transform 0.5s;
+    transition-delay: 0.1s;
+}  
+
+a span:nth-child(4){
+    left: 0;
+    top:0;
+    width:100%;
+    height: 1px;
+    transform: scaleY(0);
+    transform-origin: right;
+    transform: transform 0.5s;
+    transition-delay: 0.1s;
+}
+
+a:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: left;
+    transform: transform 0.5s;
+    transition-delay: 0.1s;
+}
+
+#btn{
+    display: flex;
+    margin-right: 700px ;
+    margin-left: 680px ;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(247, 136, 9);
+    margin-top: 10px;
+}
+#btn:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+
+footer{
+    padding:20px;
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+    background-color: #ddd;
+    text-align: center;
+}
+
+/* Sets the containers height and width */
+.base-timer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .base-timer__svg {
+    /* Flips the svg and makes the animation to move left-to-right */  
+    transform: scaleX(-1);
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* The SVG path that displays the timer's progress */
+  .base-timer__path-elapsed {
+    stroke-width: 8px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    /* Just as thick as the original ring */
+    stroke-width: 8px;
+    /* Rounds the line endings to create a seamless circle */
+    stroke-linecap: round;
+    /* Makes sure the animation starts at the top of the circle */
+    transform: rotate(90deg);
+    transform-origin: center;
+    /* One second aligns with the speed of the countdown timer */   
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    /* Allows the ring to change color when the color value updates */
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    /* Size should match the parent container */
+    width: 100px;
+    height: 100px;
+     /* Keep the label aligned to the top */
+    top: 0;
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 24px;
+  }
+
+  .login-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    margin: 0 auto;
+}
+
+/* BUTTONS */
+#btn_2{
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    width: 15rem;
+    text-align: center;
+    align-items: space-between;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+#btn_2:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+

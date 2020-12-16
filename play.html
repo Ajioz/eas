@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+     <!--Import Google Icon Font-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="/Dashboard/materialize.min.css" media="screen, projection" />
+
+    <link rel="stylesheet" href="play.css" />
+</head>
+<body>
+    <div class="container-darken">
+            <div class="container home1">
+              <h2>Settings</h2>
+                <div class="input-field col s12">
+                    <select id="decide">
+                      <option value="" disabled selected>Use Time Control ?</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+                    </select>
+                    <!-- <label for="answer">Use Time Control?</label> -->
+                </div>
+                
+                <div class="input-field col s12">
+                    <select id="time_fraction">
+                      <option value="" disabled selected>Set Timer Option</option>
+                      <option value="1">Individual Question</option>
+                      <option value="2">Entire Question</option>
+                    </select>
+                </div>
+
+                <div class="input-field col s12">
+                    <select  id="exam">
+                      <option value="" disabled selected>Set Exam Type</option>
+                      <option value="1">JAMB</option>
+                      <option value="2">WAEC</option>
+                      <option value="3">NECO</option>
+                    </select>
+                </div>
+
+                <div class="input-field col s12">
+                  <select  id="subject">
+                    <option value="" disabled selected>Choose Subject</option>
+                    <option  class="sub" value="1" >Maths</option>
+                    <option  class="sub" value="2">English</option>
+                    <option  class="sub" value="3">Physics</option>
+                    <option  class="sub" value="4">Chemistry</option>
+                    <option  class="sub" value="5">BIology</option>
+                    <option  class="sub" value="6">Agriculture</option>
+                    <option  class="sub" value="7">Economics</option>
+                    <option  class="sub" value="8">Commerce</option>
+                    <option  class="sub" value="9">Literature</option>
+                    <option  class="sub" value="10">Government</option>
+                    <option  class="sub" value="11">Geography</option>
+                    <option  class="sub" value="12">Further Maths</option>
+                    <option  class="sub" value="13">Civic Education</option>
+                    <option  class="sub" value="14">Christian Studies</option>
+                    <option  class="sub" value="15">Islamic Studies</option>
+                  </select>
+              </div>
+                <form class="col s12">
+                  <div class="input-field col s6">
+                    <input type="text" id="date" class="datepicker">
+                    <label id = "mylabel" for="choice3">Select Year</label>
+                  </div>
+                </form>
+            </div>
+
+            <div class="container home2">
+                <h2>Instruction</h2><br>
+                <p>To your left are settings you are required to make before taking the practise Exam (questions). Default values are used if they are left empty. Do not use the browser back/front navigation arrow during exam practise. A navigation button is provided for you if your choice on the timer control option is "NO".  However, if timer option is opted for, the control is automated without you having to click next or previous, interesting right?<br><br>Feel free to choose exam type and year of interest, using the appropriate log tab.<br><br>
+                Once you are done, move over to your left, click start to begin or quit if unprepared!</p><br>
+              <h2>Good Luck!</h2>
+            </div>
+          
+            <div class="container home3">
+                  <!-- <a href="/game.html" class="btn_1">Start</a> -->
+                  <a  id="start" href="" class="btn_1">Start</a>
+                  <a href="/index.html" class="btn_1">Log Out</a>
+            </div>
+
+    </div>
+
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script type="text/javascript" src="/Dashboard/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('select').formSelect();
+      $('.datepicker').datepicker();
+    });
+  </script>
+
+<script type="text/javascript"> 
+  window.history.forward(); 
+  function noBack() { 
+      window.history.forward(); 
+  } 
+</script>
+<script src="play.js" type="text/javascript"></script>
+</body>
+</html>

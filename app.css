@@ -1,0 +1,232 @@
+:root{
+    background-color: #def0f1;
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 4.4rem;
+    color:white;
+    margin-bottom: 5rem;
+}
+
+h1 > span{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* UTILITIES */
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+#answer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 60rem;
+    margin: 30px auto;
+    padding: 2rem;
+}
+/* Targeting Container Child */
+.container > * {
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* BUTTONS */
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/*  Form  */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(80, 180, 200, 0.5);
+}
+
+a:focus{
+    outline: 0;
+}
+
+button:focus{
+    outline: 0;
+}
+input:focus{
+    outline: 0;
+}
+
+input::placeholder{
+    color: lightgrey;
+}
+
+/*LOADER*/
+#loader{
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Sets the containers height and width */
+.base-timer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .base-timer__svg {
+    /* Flips the svg and makes the animation to move left-to-right */  
+    transform: scaleX(-1);
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* The SVG path that displays the timer's progress */
+  .base-timer__path-elapsed {
+    stroke-width: 8px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    /* Just as thick as the original ring */
+    stroke-width: 8px;
+    /* Rounds the line endings to create a seamless circle */
+    stroke-linecap: round;
+    /* Makes sure the animation starts at the top of the circle */
+    transform: rotate(90deg);
+    transform-origin: center;
+    /* One second aligns with the speed of the countdown timer */   
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    /* Allows the ring to change color when the color value updates */
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    /* Size should match the parent container */
+    width: 100px;
+    height: 100px;
+     /* Keep the label aligned to the top */
+    top: 0;
+    /* Create a flexible box that centers content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Sort of an arbitrary number; adjust to your liking */
+    font-size: 24px;
+    color:teal;
+  }
+ 

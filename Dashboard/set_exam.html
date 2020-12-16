@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+       <!--Import Google Icon Font-->
+       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen, projection" />
+       <link rel="stylesheet" type="text/css" href="dashboard.css"/>
+       <script src="https://kit.fontawesome.com/5aa9262777.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#!" class="brand-logo">eAs</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="current"><a href="set_exam.html">Set Exam</a></li>
+              <li><a href="publish.html">Publish</a></li>
+            </ul>
+          </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="set_exam.html"> Set Exam</a></li>
+        <li><a href="publish.html">  Publish</a></li>
+      </ul>
+      <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="/images/officex.jpg" class="responsive-img">
+                </div>
+                <a href="#user"><img class="circle" src="/images/school2.jpg"></a>
+                <a href="#name"><span class="white-text name nav_name"></span></a>
+                <a href="#email"><span class="white-text email nav_email"></span></a>
+            </div>
+        </li>
+        <li><a href="#!">Course : Level : Master</a></li>
+        <li><div class="divider"></div></li>
+        <ul class="getter"></ul>
+  </ul><br>
+  <div class="seprator"></div>
+  <a href="#" data-target="slide-out" class="sidenav-trigger">
+      <i class="material-icons">navigation</i>
+  </a>
+  <div class="border">
+        <header id="header" >
+            <div id="page-banner">
+                <h1 class="department">Set Exam</h1>
+                <div class="expand"></div> 
+            </div>
+        </header>
+        <div class="expand"></div> 
+        <div id="containerz">
+            <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                    <div class="input-field col s6">
+                        <input id="department" type="text" class="validate class">
+                        <label for="department">School</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <select id="myDropdown" class="materialSelect">
+                          <option disabled selected>Select Course</option>
+                        </select>
+                        <label for="code">Course Code</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Set Question</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                          <input id="choice1" type="text" class="validate">
+                          <label for="choice1">Choice 1</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="choice2" type="text" class="validate">
+                          <label for="choice2">Choice 2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                          <input id="choice3" type="text" class="validate">
+                          <label for="choice3">Choice 3</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="choice4" type="text" class="validate">
+                          <label for="choice4">Choice 4</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="score" type="text" class="validate">
+                        <label for="score">Score Weight</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <select id="myDropdown2" class="materialSelect">
+                          <option disabled selected>Set Answer</option>
+                          <option value="1">Choice 1</option>
+                          <option value="2">Choice 2</option>
+                          <option value="3">Choice 3</option>
+                          <option value="4">Choice 4</option>
+                        </select>
+                        <label for="answer">Answer</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <select>
+                          <option value="" disabled selected>Exam Type</option>
+                          <option class="exam" value="1">Internal Exam</option>
+                          <option class="exam" value="2">JAMB</option>
+                          <option class="exam" value="3">WAEC</option>
+                          <option class="exam" value="4">NECO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </form>
+            </div>
+        </div>
+  </div>
+  
+  <a href="#" class="to-top"><i class="fas fa-angle-double-up"></i></a>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue"><i class="large material-icons">attach_file</i></a>
+      <ul>
+
+        <li><a class="btn-floating modal-trigger yellow darken-1" href="#modal1"><i class="material-icons">sms</i></a></li>
+
+        <li><a class="btn-floating modal-trigger red" href="#modal2"><i class="material-icons">panorama</i></a></li>
+
+        <li><a class="btn-floating modal-trigger green" href="#modal1"><i class="material-icons">note_add</i></a></li>
+
+        <li><a class="btn-floating modal-trigger teal" href="#modal2"><i class="material-icons">image</i></a></li>
+
+      </ul>
+  </div>
+  
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Type Solution Here</h4>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Solution</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <button class="btn waves-effect left blue darken-1" onclick="createTask()"><i class="material-icons">publish</i></button>
+      </div>
+  </div>
+
+    <!-- Modal Structure for file Upload -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+          <h4>Upload Screen-shotted Solution</h4>
+          <input type="file" id="the-photo-file-field">
+          <div id="preview" >
+              <!--image will be inserted here-->
+          </div>
+          <div id="data" class="large-8 columns">
+              <h2 id="name"></h2>
+              <p id="size"></p>
+              <p id="type"></p>
+          </div>
+      </div>
+      <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <button class="btn waves-effect left blue darken-1" onclick="imageTask()"><i class="material-icons">publish</i></button>
+      </div>
+  </div>
+            
+
+  <!-- <footer><p>Ajiozi Limited, Copyright &copy; 2020</p></footer> -->
+  <footer id="service" class="page-footer light-blue darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="sep"></div>
+        <div class="col l6 s12">
+          <h5 class="yellow-text">Visit us:</h5><br>
+          <p class="grey-text text-lighten-4">
+              <h6 class="black-text">Head Office</h6>
+              <p>#31 Airport Road, 
+                  <p>Effurun, Delta State,</p>
+                  <p>Nigeria.</p>
+                </p>
+            </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="yellow-text"> Call Lines</h5>
+            <p class="white-text">+234-8064107055</p>
+            <p class="white-text">+234-8151654368</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container">
+        Ajiozi Limited, Copyright &copy; 2017 - 2021
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script type="text/javascript" src="materialize.min.js"></script>
+  
+  <script type="text/javascript"> 
+    window.history.forward(); 
+    function noBack() { 
+        window.history.forward(); 
+    } 
+  </script> 
+  
+  <script src="exam.js"></script>
+    
+</body>
+</html>

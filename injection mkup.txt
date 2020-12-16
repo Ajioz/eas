@@ -1,0 +1,23 @@
+<li>
+                <div class="course-card">
+                    <div class="view_details">
+                        <h6 class="dropdown-trigger action" data-target='dropdown1'>Action</h6>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="set_exam.html">Exam</a></li>
+                            <li><a href="publish.html">Push</a></li>
+                        </ul>
+                    </div>     	
+                    <div class="stats-container">
+                        <div>
+                            <span class="course_class">SS1</span>
+                            <span class="course_name">Physic</span>    
+                            <p class="course_code">physics_101</p>   
+                        </div>
+                        <div class="school_name">
+                            <strong>Alvinas Model School</strong>
+                            <span class="delete">X</span>
+                            <h6>Mr Seth Dembo</h6>
+                        </div>                       
+                    </div>                         
+                </div>
+</li>

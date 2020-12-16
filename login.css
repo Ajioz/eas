@@ -1,0 +1,118 @@
+
+body{
+    background-color: white;
+    justify-content: center;
+}
+.containerz{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center; 
+    background-color:white;  
+    
+}
+
+.login-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.register{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.register #btn {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.1rem 0.5rem;
+    width: 5rem;
+    border: none;
+    background: -moz-linear-gradient(bottom, darkslategray 0%, lightgray 100%);
+    background: -webkit-linear-gradient(bottom, darkslategray 0%, lightgray 100%);
+    background: linear-gradient(bottom, darkslategray 0%, lightgray 100%);    
+   
+}
+
+.hud-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+img{
+    width: 100px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+/* BUTTONS */
+#btn{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    text-align: center;
+    align-items: space-between;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+#btn:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.log-background{
+    width: 100%;
+    background-size: 10%, 100%;
+    background-image: url(/images/Official%20Logo2.png), url(/images/login3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left, center center;
+}
+
+
+/* footer{
+    padding:5px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(124, 72, 72);
+    text-align: center;
+} */
+
+nav{
+    position: fixed;
+    transition: 0.6s;
+    z-index: 10000;
+}
+
+nav.sticky{
+    opacity: 0.8;
+    color: chartreuse;
+}
+
+nav.sticky  li a {
+    color: white;
+}
+
+.current{
+    background-color: rgba(85, 29, 29, 0.637);
+}

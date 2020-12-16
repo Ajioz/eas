@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "choice1": "<script>",
+    "choice2": "<javascript>",
+    "choice3": "<js>",
+    "choice4": "<scripting>",
+    "answer": 1,
+    "solution": "This is fundamental as the JavaScript is considered a resource and should be enclosed in such way"
+  },
+  {
+    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+    "choice1": "<script href='xxx.js'>",
+    "choice2": "<script name='xxx.js'>",
+    "choice3": "<script src='xxx.js'>",
+    "choice4": "<script file='xxx.js'>",
+    "answer": 3,
+    "solution": "This is so as the externeal resource must follow the standard hypertext reference communication protocol"
+  },
+  {
+    "question": " How do you write 'Hello World' in an alert box?",
+    "choice1": "msgBox('Hello World');",
+    "choice2": "alertBox('Hello World');",
+    "choice3": "msg('Hello World');",
+    "choice4": "alert('Hello World');",
+    "answer": 4,
+    "solution": "The alert is a window global object that can be reference by the browser "
+  },
+  {
+    "question": "How Many States are there in Nigeria?",
+    "choice1": "36",
+    "choice2": "26",
+    "choice3": "35",
+    "choice4": "30",
+    "answer": 1,
+    "solution": "Nigeria has 36 official state with the FCT been the 37th, not ruled by any governor"
+  },
+  {
+    "question": "Which country is ranked poorest nation by year 2020 world economic rating?",
+    "choice1": "India",
+    "choice2": "Philipine",
+    "choice3": "Nigeria",
+    "choice4": "DR Congo",
+    "answer": 3,
+    "solution": "Un-fortunately due to bad leadership[, NIgeria made his way to been World the capital of poverty in 2020"
+  },
+  {
+    "question": "Who killed Goliath?",
+    "choice1": "Jonathan",
+    "choice2": "King Saul",
+    "choice3": "King David",
+    "choice4": "David",
+    "answer": 4,
+    "solution": "David killed Goliath, with a sling, stone and faith in God"
+  },
+  {
+    "question": "What does IoT stands for?",
+    "choice1": "Internet of Things",
+    "choice2": "International Organisation Trade",
+    "choice3": "Inter-disicipline of trade",
+    "choice4": "None of the Above",
+    "answer": 1,
+    "solution": "This is considered the a tec revolution that is transformning the world"
+  },
+  {
+    "question": "Who betrayed Jesus Christ, the Messiah?",
+    "choice1": "Peter",
+    "choice2": "John",
+    "choice3": "Judas Iscariot",
+    "choice4": "Philemon",
+    "answer": 3,
+    "solution": "Judas betrayed Jesus fot 30 silver of shekel, which he returned when he observed he had done a great sin, he went to hang himself on a tree and the money was used to purchase a cementary, in accordance to prophecy"
+  },
+  {
+    "question": "Who denied Jesus Thrice before the Cock crolled",
+    "choice1": "Judas Iscariot",
+    "choice2": "Timothy",
+    "choice3": "Thomas",
+    "choice4": "Peter",
+    "answer": 4,
+    "solution": "Peter denied Jesus when a young lady who identified him among Jesus'came asking so that he can be allowed in to see the trial, but out of fear Peter denied Jesus, thrice before the cook crow"
+  },
+  {
+    "question": "Which is considered the most robust and widely used backend service?",
+    "choice1": "ASP.NET",
+    "choice2": "Clojure",
+    "choice3": "PHP",
+    "choice4": "Nodejs-JS",
+    "answer": 4,
+    "solution": "Node.js is robust and has the largest ecosytem, it is faster and more efficient"
+  }
+]

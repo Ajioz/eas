@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="take_exam.css">
+</head>
+<body>
+    <div class="border">
+        <header id="header" >
+            <div id="page-banner">
+                <h1 id="name" class="department"></h1>
+            </div>
+        </header>
+        <div class="container">
+            <div id="loader"></div>
+            <div id="game" class="justify-center flex-column hidden">
+                <div id="hud">
+                    <div id="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Question
+                        </p>
+                       <div id="progressBar">
+                           <div id="progressBarFull"></div>
+                       </div>
+                    </div>   
+                    <div id="hud-item">
+                        <p id="app"></p>
+                    </div>           
+                    <div id="hud-item">
+                        <p class="hud-prefix">Student ID</p>
+                        <h4 class="hud-main-text" id="studentID">id</h4>
+                    </div>
+                </div>
+    
+                <h2 id="question">What is the answer to this question?</h2>
+    
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1"> Choice 1</p>
+                </div>
+    
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+    
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Chioce 3</p>
+                </div>
+    
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div> 
+            </div>
+
+            <div id="reveal" class="hidden">
+                <p>Congratulations</p>
+                <h2>
+                    You have Succeefully completed your exam.
+                    You would be communicated as soon as your result is ready.
+                    Good luck!
+                </h2>
+            </div>
+
+        </div>
+
+        <div id="ctr_btn" class="container2 hidden">
+            <div id="previous">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   << Previous       
+                </a>
+            </div>
+            <div id="next">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   Next >>       
+                </a>
+            </div>
+        </div> 
+</div>
+<div id="btn_ctr" class="hidden">
+    <a href="#" id="btn">Submit</a>
+</div>
+
+<footer><p>Ajiozi Limited, Copyright &copy; 2020</p></footer>
+
+<script type="text/javascript"> 
+    window.history.forward(); 
+    function noBack() { 
+        window.history.forward(); 
+    } 
+</script>
+ 
+<script src="take_exam.js"></script>
+</body>
+</html>
